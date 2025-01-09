@@ -1,0 +1,42 @@
+.contact {
+    background-image: url("http://localhost:3000/images/herobg/hero1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    width: 500px;
+    box-sizing: border-box;
+    padding: 16px 20px;
+    font-size: 14px;  
+    border-radius: 7px;
+    background-color: #ffffff50;
+    box-shadow: 0px 0px 3px #0000002d;
+ }
+
+ .form label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+ }
+
+.form .btn{
+    background-color: #000;
+    padding: 7px;
+    color: #fff;
+ }
+
+ .form  input,
+ /* .phone, */
+ .form  textarea, 
+ .btn {
+    width: 100%;
+    padding: 9px 16px;
+    border-radius: 4px;
+    font-size: 14px; 
+    outline: none;
+    color: #ffffff;
+    background-color: rgba(210, 231, 236, 0.479);
+ }

@@ -1,0 +1,63 @@
+.tableParent{
+    box-sizing: border-box;
+    padding: 20px 2%;
+    border: 1px solid gray;
+    min-height: 100vh;
+}
+.specialColor{
+    background-color: rgba(0, 255, 0, 0.103);
+    background-color: rgba(0, 140, 255, 0.185);
+    border-radius: 18px;
+    padding: 5px 10px;  
+    width: fit-content;
+}
+.delete{
+    background-color: rgba(0, 255, 0, 0.103);
+    background-color: rgba(0, 140, 255, 0.185);
+    /* border-radius: 18px; */
+    padding: 5px 10px;  
+    width: fit-content;
+}
+.delete:hover{
+    background-color: red;
+    color: #fff;
+}
+.tableParent table {
+    width: 100%;
+    border-collapse: collapse; 
+    background-color: #ffffff93;
+    text-align: left;
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
+    border: 1px solid gray;
+  }
+  
+.tableParent  thead {
+    background-color:#000000f3;
+    border-radius: 20px;
+    color: #fff;
+  }
+  
+   
+  
+.tableParent  thead th {
+    padding: 12px 16px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600; 
+  }
+   
+.tableParent tbody tr:nth-child(even) {
+    background-color: #03195f0e;
+  }
+  
+.tableParent tbody tr:hover,
+  .order-list ul:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+  }
+  
+.tableParent tbody td {
+    padding: 5px 16px;
+    font-size: 12px; 
+  }
