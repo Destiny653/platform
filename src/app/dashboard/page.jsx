@@ -17,7 +17,7 @@ export default function Page() {
 
     const getData = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/clients')
+            const response = await fetch('https://platform-omega-two.vercel.app/api/clients')
             const info = await response.json()
             if (!response.ok) {
                 alert(info.message)
@@ -35,7 +35,7 @@ export default function Page() {
     const handledelete = async (id) => {
         getData()
         try {
-            const response = await fetch(`http://localhost:3000/api/clients/${id}`, {
+            const response = await fetch(`https://platform-omega-two.vercel.app/api/clients/${id}`, {
                 method: 'DELETE',
             })
             const json = await response.json()
@@ -85,150 +85,6 @@ export default function Page() {
                                 </tr>
                             ))
                         }
-                        <tr>
-                            <td className='flex items-center gap-[7px] jc'>
-                                <div className='flex justify-center items-center bg-[#fff] rounded-full w-[33px] h-[33px]'>
-                                    <FaUser className='text-[#91abafbb] text-[24px]' />
-                                </div>
-                                <div>
-                                    <h1>Megalone Mata</h1>
-                                    <p className='text-[#294cc0]'>megalone@gamil.com</p>
-                                </div>
-                            </td>
-                            <td><span className={`${style.specialColor}`}>0789876543</span></td>
-                            <td>2022-03-20 / <br /> 12:09:00</td>
-                            <td>This is a sample comment</td>
-                            <td><span className={`${style.specialColor}`}>England</span></td>
-                            <td className='client-btn' onClick={() => handledelete()} ><span className={`${style.delete}`}>Delete</span></td>
-                        </tr>
-                        <tr>
-                            <td className='flex items-center gap-[7px] jc'>
-                                <div className='flex justify-center items-center bg-[#fff] rounded-full w-[33px] h-[33px]'>
-                                    <FaUser className='text-[#91abafbb] text-[24px]' />
-                                </div>
-                                <div>
-                                    <h1>Megalone Mata</h1>
-                                    <p className='text-[#294cc0]'>megalone@gamil.com</p>
-                                </div>
-                            </td>
-                            <td><span className={`${style.specialColor}`}>0789876543</span></td>
-                            <td>2022-03-20 / <br /> 12:09:00</td>
-                            <td>This is a sample comment</td>
-                            <td><span className={`${style.specialColor}`}>England</span></td>
-                            <td className='client-btn' ><span className={`${style.delete}`}>Delete</span></td>
-                        </tr>
-                        <tr>
-                            <td className='flex items-center gap-[7px] jc'>
-                                <div className='flex justify-center items-center bg-[#fff] rounded-full w-[33px] h-[33px]'>
-                                    <FaUser className='text-[#91abafbb] text-[24px]' />
-                                </div>
-                                <div>
-                                    <h1>Megalone Mata</h1>
-                                    <p className='text-[#294cc0]'>megalone@gamil.com</p>
-                                </div>
-                            </td>
-                            <td><span className={`${style.specialColor}`}>0789876543</span></td>
-                            <td>2022-03-20 / <br /> 12:09:00</td>
-                            <td>This is a sample comment</td>
-                            <td><span className={`${style.specialColor}`}>England</span></td>
-                            <td className='client-btn' onClick={() => handledelete()}><span className={`${style.delete}`}>Delete</span></td>
-                        </tr>
-                        <tr>
-                            <td className='flex items-center gap-[7px] jc'>
-                                <div className='flex justify-center items-center bg-[#fff] rounded-full w-[33px] h-[33px]'>
-                                    <FaUser className='text-[#91abafbb] text-[24px]' />
-                                </div>
-                                <div>
-                                    <h1>Megalone Mata</h1>
-                                    <p className='text-[#294cc0]'>megalone@gamil.com</p>
-                                </div>
-                            </td>
-                            <td><span className={`${style.specialColor}`}>0789876543</span></td>
-                            <td>2022-03-20 / <br /> 12:09:00</td>
-                            <td>This is a sample comment</td>
-                            <td><span className={`${style.specialColor}`}>England</span></td>
-                            <td className='client-btn' ><span className={`${style.delete}`}>Delete</span></td>
-                        </tr>
-                        <tr>
-                            <td className='flex items-center gap-[7px] jc'>
-                                <div className='flex justify-center items-center bg-[#fff] rounded-full w-[33px] h-[33px]'>
-                                    <FaUser className='text-[#91abafbb] text-[24px]' />
-                                </div>
-                                <div>
-                                    <h1>Megalone Mata</h1>
-                                    <p className='text-[#294cc0]'>megalone@gamil.com</p>
-                                </div>
-                            </td>
-                            <td><span className={`${style.specialColor}`}>0789876543</span></td>
-                            <td>2022-03-20 / <br /> 12:09:00</td>
-                            <td>This is a sample comment</td>
-                            <td><span className={`${style.specialColor}`}>England</span></td>
-                            <td className='client-btn' ><span className={`${style.delete}`}>Delete</span></td>
-                        </tr>
-                        <tr>
-                            <td className='flex items-center gap-[7px] jc'>
-                                <div className='flex justify-center items-center bg-[#fff] rounded-full w-[33px] h-[33px]'>
-                                    <FaUser className='text-[#91abafbb] text-[24px]' />
-                                </div>
-                                <div>
-                                    <h1>Megalone Mata</h1>
-                                    <p className='text-[#294cc0]'>megalone@gamil.com</p>
-                                </div>
-                            </td>
-                            <td><span className={`${style.specialColor}`}>0789876543</span></td>
-                            <td>2022-03-20 / <br /> 12:09:00</td>
-                            <td>This is a sample comment</td>
-                            <td><span className={`${style.specialColor}`}>England</span></td>
-                            <td className='client-btn' ><span className={`${style.delete}`}>Delete</span></td>
-                        </tr>
-                        <tr>
-                            <td className='flex items-center gap-[7px] jc'>
-                                <div className='flex justify-center items-center bg-[#fff] rounded-full w-[33px] h-[33px]'>
-                                    <FaUser className='text-[#91abafbb] text-[24px]' />
-                                </div>
-                                <div>
-                                    <h1>Megalone Mata</h1>
-                                    <p className='text-[#294cc0]'>megalone@gamil.com</p>
-                                </div>
-                            </td>
-                            <td><span className={`${style.specialColor}`}>0789876543</span></td>
-                            <td>2022-03-20 / <br /> 12:09:00</td>
-                            <td>This is a sample comment</td>
-                            <td><span className={`${style.specialColor}`}>England</span></td>
-                            <td className='client-btn' ><span className={`${style.delete}`}>Delete</span></td>
-                        </tr>
-                        <tr>
-                            <td className='flex items-center gap-[7px] jc'>
-                                <div className='flex justify-center items-center bg-[#fff] rounded-full w-[33px] h-[33px]'>
-                                    <FaUser className='text-[#91abafbb] text-[24px]' />
-                                </div>
-                                <div>
-                                    <h1>Megalone Mata</h1>
-                                    <p className='text-[#294cc0]'>megalone@gamil.com</p>
-                                </div>
-                            </td>
-                            <td><span className={`${style.specialColor}`}>0789876543</span></td>
-                            <td>2022-03-20 / <br /> 12:09:00</td>
-                            <td>This is a sample comment</td>
-                            <td><span className={`${style.specialColor}`}>England</span></td>
-                            <td className='client-btn' ><span className={`${style.delete}`}>Delete</span></td>
-                        </tr>
-                        <tr>
-                            <td className='flex items-center gap-[7px] jc'>
-                                <div className='flex justify-center items-center bg-[#fff] rounded-full w-[33px] h-[33px]'>
-                                    <FaUser className='text-[#91abafbb] text-[24px]' />
-                                </div>
-                                <div>
-                                    <h1>Megalone Mata</h1>
-                                    <p className='text-[#294cc0]'>megalone@gamil.com</p>
-                                </div>
-                            </td>
-                            <td><span className={`${style.specialColor}`}>0789876543</span></td>
-                            <td>2022-03-20 / <br /> 12:09:00</td>
-                            <td>This is a sample comment</td>
-                            <td><span className={`${style.specialColor}`}>England</span></td>
-                            <td className='client-btn' ><span className={`${style.delete}`}>Delete</span></td>
-                        </tr>
                     </tbody>
                 </table>
             </section>

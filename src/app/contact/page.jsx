@@ -28,7 +28,7 @@ export default function Page() {
     setFormData(updatedData); 
 
     try {
-      const response = await fetch('http://localhost:3000/api/clients', {
+      const response = await fetch('https://platform-omega-two.vercel.app/api/clients', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(updatedData),

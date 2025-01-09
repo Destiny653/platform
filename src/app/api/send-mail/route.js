@@ -29,7 +29,7 @@ export default async function handler(req, res) {
                 hour12: true,
               })
             }</p>
-            <p>You can click <a href="#">here</a> to continue.</p> 
+            <p>You can click <a href="https://platform-omega-two.vercel.app/">here</a> to continue.</p> 
         `,
     };
 
