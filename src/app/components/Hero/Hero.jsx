@@ -58,10 +58,10 @@ export default function Hero() {
         <div className='flex flex-col gap-[50px] my-[40px]'>
             <div className={`box-border flex items-center h-[500px] py-[100px] relative ${style.heroBg}`}>
                 <div className={`top-0 z-1 absolute flex justify-center items-center w-full h-[500px] overflow-hidden ${style.heroBgItem}`}>
-                    <img className='z-1 w-full' src={heros[currentHero].image} alt={currentHero.title} />
+                    <img className='z-1 w-full' src={heros[currentHero].image} alt={heros[currentHero].title} />
                 </div>
                 <section className='z-10 absolute flex flex-col gap-[20px] px-[5%] w-[70%] text-[#fff]'>
-                    <h1 className='font-[600] text-[59px]'>{heros[5].title}</h1>
+                    <h1 className='font-[600] text-[59px]'>{heros[currentHero].title}</h1>
                     <p className='text-[25px]'>{heros[currentHero].desc}</p>
                     <Link href={'https://www.social-shepherd.com'}>
                         <button className='bg-[#9696fa] hover:bg-[blue] px-[30px] py-[10px] rounded-[4px] w-fit text-[#fff] text-[18px]'>Join Now for Free</button>
