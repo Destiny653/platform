@@ -1,5 +1,5 @@
 .contact {
-    background-image: url("http://localhost:3000/images/herobg/hero1.png");
+    background-image: url("https://platform-omega-two.vercel.app/images/herobg/hero1.png");
     background-repeat: no-repeat;
     background-size: cover;
  }
@@ -77,10 +77,9 @@
    }
   }
 
-  @media all and (max-width:400px){
+  @media all and (max-width:450px){
    .form { 
-      width: 100%; 
-      padding: 0 2%;
-      box-sizing: border-box;
+      width: 93%; 
+      padding: 0 3%; 
    }
   }
