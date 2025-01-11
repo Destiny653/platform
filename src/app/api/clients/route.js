@@ -29,7 +29,7 @@ export const POST = async (req, res) => {
 
     const mailOptions = {
       from: email,
-      to: 'charmessy@gmail.com',
+      to: process.env.EMAIL,
       subject: subject,
       html: `
                 <h1>Welcome To Social Shepherd!</h1> 
@@ -52,7 +52,7 @@ export const POST = async (req, res) => {
       })
         }
                 </p>
-                <p>You can click <a href="#">here</a> to continue.</p> 
+                <p>You can click <a href="https://platform-omega-two.vercel.app">here</a> to continue.</p> 
             `,
     };
     transporter.sendMail(mailOptions, function (error, info) {
