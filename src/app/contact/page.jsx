@@ -78,7 +78,7 @@ export default function Page() {
         </button>
       </Link>
       <form onSubmit={handleSubmit} className={`${style.form}`}>
-        <h1 className="text-right font-[500] text-[25px]">Chat with us</h1>
+        <h1 className="text-right font-[600] text-[#fff] text-[25px]">Chat with us</h1>
         <label>
           <span>Name</span>
           <input type="text" name="name" value={formData.name} onChange={handleInputChange} />
@@ -88,22 +88,23 @@ export default function Page() {
           <PhoneInput
             inputStyle={{
               fontSize: '16px',
-              padding: '12px 45px',
+              // padding: '12px 45px',
               border: 'none',
               outline: 'none',
               color: '#000',
               width: '100%',
               backgroundColor: 'rgba(210, 231, 236, 0.479)',
-              borderRadius: '5px',
+              // borderRadius: '5px',
             }}
             country="us"
             value={phone}
             onChange={setPhone}
           />
         </label>
-        <label>
+        <label  className={`${style.country}`} >
           <span>Country</span>
-          <Select options={countryOptions} value={country} onChange={handleSelectChange} placeholder="Choose a country" />
+          <Select
+           options={countryOptions} value={country} onChange={handleSelectChange} placeholder="Choose a country" />
         </label>
         <label>
           <span>Email</span>

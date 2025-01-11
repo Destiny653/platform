@@ -2,6 +2,14 @@
     /* background: url('https://media.istockphoto.com/id/1187179171/photo/futuristic-office.jpg?s=612x612&w=0&k=20&c=GbJoBwiAVklbGLD0rkk67xyYBk_cuoSP-D-ujEHGLdo='); */
     background-size: cover; 
 }
+.heroBg h1{
+    font-size: 60px;
+    line-height: 1.2em;
+}
+.heroBg p{
+    font-size: 25px;
+    /* line-height: 1.2em; */
+}
 .heroBgItem::after{
     content: "";
     position: absolute;
@@ -157,3 +165,52 @@
     font-size: 14px;
     font-weight : 500;
 }
+
+/*
+================================
+media 
+================================ 
+ */
+@media all and (max-width:1200px){ 
+    .heroBg section{ 
+        width: 100%;
+        /* line-height: 1.2em; */
+    }
+   }
+@media all and (max-width:800px){
+    .heroBg h1{
+        font-size: 30px;
+        line-height: 1.2em;
+    }
+    .heroBg p{
+        font-size: 18px;
+        line-height: 1.1em;
+    }
+    .heroBg section{ 
+        width: 100%;
+        /* line-height: 1.2em; */
+    }
+    .heroBg button{ 
+        /* width: 100%; */
+        /* line-height: 1.2em; */
+        font-size: 16px;
+        padding: 5px 12px;
+    } 
+    .featuredOpportunities> div section {
+        width: 500px;
+        height: 100%;
+        transition: transform 0.2s ease;
+    } 
+    .featuredOpportunities> div h1{
+        font-size: 19px; 
+        line-height: 1.2em;
+    }
+    .featuredOpportunities> div p{
+        font-size: 14px; 
+        line-height: 1.3em;
+    }
+    .featuredOpportunities> div button{
+        font-size: 14px; 
+        padding: 5px 10px;
+    }
+   }

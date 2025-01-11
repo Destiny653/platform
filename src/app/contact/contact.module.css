@@ -12,7 +12,7 @@
     padding: 16px 20px;
     font-size: 14px;  
     border-radius: 7px;
-    background-color: #ffffff50;
+    background-color: #ffffff15;
     box-shadow: 0px 0px 3px #0000002d;
  }
 
@@ -20,6 +20,10 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+ }
+ .form span { 
+   color: #fff;
+   font-weight: 600;
  }
 
 .form .btn{
@@ -30,13 +34,51 @@
 
  .form  input,
  /* .phone, */
- .form  textarea, 
- .btn {
+ .form  textarea,
+ .form  select
+ {
     width: 100%;
     padding: 9px 16px;
     border-radius: 4px;
     font-size: 14px; 
     outline: none;
-    color: #ffffff;
+    color: #000;
     background-color: rgba(210, 231, 236, 0.479);
+   }
+   .form .country> div  { 
+      background-color: none; 
+      color: #000;
+      outline: none;
+   }
+   .form .country div > div { 
+      background-color: none;   
+      color: #000;
+      outline: none;
+      border: none;
+   }
+   .form .country div > div { 
+      background-color:  inherit; 
+      background-color: none; 
+      background-color: rgba(210, 231, 236, 0.479); 
+      color: #000;
+      outline: none;
  }
+    
+
+ /*
+ ================================
+ @media 
+ ================================ 
+  */
+
+  @media all and (max-width:600px){
+   .form { 
+      width: 80%; 
+   }
+  }
+
+  @media all and (max-width:400px){
+   .form { 
+      width: 90%; 
+   }
+  }

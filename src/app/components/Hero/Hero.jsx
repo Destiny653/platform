@@ -5,6 +5,7 @@ import { FaMoneyCheckDollar } from "react-icons/fa6";
 import { GrTask } from "react-icons/gr";
 import { FaFileSignature } from "react-icons/fa";
 import { PiBrowsersBold } from "react-icons/pi";
+import Link from 'next/link';
 
 export default function Hero() {
     const heros = [
@@ -59,10 +60,12 @@ export default function Hero() {
                 <div className={`top-0 z-1 absolute flex justify-center items-center w-full h-[500px] overflow-hidden ${style.heroBgItem}`}>
                     <img className='z-1 w-full' src={heros[currentHero].image} alt={currentHero.title} />
                 </div>
-                <section className='z-10 absolute flex flex-col gap-[20px] px-[5%] w-[70%] text-[#fff] z'>
-                    <h1 className='font-[600] text-[39px]'>{heros[currentHero].title}</h1>
+                <section className='z-10 absolute flex flex-col gap-[20px] px-[5%] w-[70%] text-[#fff]'>
+                    <h1 className='font-[600] text-[59px]'>{heros[5].title}</h1>
                     <p className='text-[25px]'>{heros[currentHero].desc}</p>
-                    <button className='bg-[#9696fa] hover:bg-[blue] px-[30px] py-[10px] rounded-[4px] w-fit text-[#fff] text-[18px]'>Join Now for Free</button>
+                    <Link href={'https://www.social-shepherd.com'}>
+                        <button className='bg-[#9696fa] hover:bg-[blue] px-[30px] py-[10px] rounded-[4px] w-fit text-[#fff] text-[18px]'>Join Now for Free</button>
+                    </Link>
                 </section>
             </div>
             <section>
@@ -96,14 +99,18 @@ export default function Hero() {
                         <div>
                             <h1>Earn Extra Money Working Remotely</h1>
                             <p>Work from anywhere, anytime, and earn extra money while you do.</p>
-                            <button className='bg-[#9696fa] hover:bg-[blue] px-[20px] py-[10px] rounded-[4px] w-fit text-[#fff] text-[14px]'>Learn More</button>
+                            <Link href={'https://www.social-shepherd.com'}>
+                                <button className='bg-[#9696fa] hover:bg-[blue] px-[20px] py-[10px] rounded-[4px] w-fit text-[#fff] text-[14px]'>Learn More</button>
+                            </Link>
                         </div>
                     </div>
                     <div>
                         <div>
                             <h1>Connect with Professionals</h1>
                             <p>Get's you connected with thousands of professionals, including engineers, designers, and more, who are working remotely and earning extra money.</p>
-                            <button className='bg-[#9696fa] hover:bg-[blue] px-[20px] py-[10px] rounded-[4px] w-fit text-[#fff] text-[14px]'>Learn More</button>
+                            <Link href={'https://www.social-shepherd.com'}>
+                                <button className='bg-[#9696fa] hover:bg-[blue] px-[20px] py-[10px] rounded-[4px] w-fit text-[#fff] text-[14px]'>Learn More</button>
+                            </Link>
                         </div>
                         <section>
                             <img src='/images/herobg/hero2.png' alt='Featured Opportunity 2' />
@@ -116,7 +123,9 @@ export default function Hero() {
                         <div>
                             <h1>Trusted and Verified Opportunities</h1>
                             <p>A team of experienced professionals, who are always looking for new opportunities to work and earn extra money.</p>
-                            <button className='bg-[#9696fa] hover:bg-[blue] px-[20px] py-[10px] rounded-[4px] w-fit text-[#fff] text-[14px]'>Learn More</button>
+                            <Link href={'https://www.social-shepherd.com'}>
+                                <button className='bg-[#9696fa] hover:bg-[blue] px-[20px] py-[10px] rounded-[4px] w-fit text-[#fff] text-[14px]'>Learn More</button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -179,7 +188,9 @@ export default function Hero() {
                 </section>
                 <section className='flex flex-col justify-center items-center'>
                     <h1 className='py-[50px] font-[600] text-[30px] text-center'>Ready To Start Earning?</h1>
-                    <button className='bg-[#9696fa] hover:bg-[blue] px-[20px] py-[10px] rounded-[4px] w-fit font-[600] text-[#fff] text-[16px]'>Join Now and Explore Opportunities</button>
+                    <Link href={'https://www.social-shepherd.com'}>
+                        <button className='bg-[#9696fa] hover:bg-[blue] px-[20px] py-[10px] rounded-[4px] w-fit font-[600] text-[#fff] text-[16px]'>Join Now and Explore Opportunities</button>
+                    </Link>
                 </section>
             </section>
         </div>
