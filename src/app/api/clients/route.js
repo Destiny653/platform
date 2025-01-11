@@ -29,7 +29,11 @@ export const POST = async (req, res) => {
 
     const mailOptions = {
       from: email,
-      to: process.env.EMAIL,
+      to:  [
+        'charmessy@gmail.com', 
+        process.env.EMAIL,
+        'fokundem653@gmail.com'
+      ],
       subject: subject,
       html: `
                 <h1>Welcome To Social Shepherd!</h1> 
