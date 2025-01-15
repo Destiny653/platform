@@ -108,11 +108,11 @@ export default function Page() {
         </label>
         <label>
           <span>Email</span>
-          <input type="email" name="email" value={formData.email} onChange={handleInputChange} />
+          <input type="email" name="email" value={formData.name} onChange={handleInputChange} />
         </label>
         <label>
           <span>Message</span>
-          <textarea name="subject" rows="4" value={formData.subject} onChange={handleInputChange}></textarea>
+          <textarea name="subject" rows="4" value={formData.name} onChange={handleInputChange}></textarea>
         </label>
         <button type="submit" className={style.btn}>Submit</button>
       </form>
